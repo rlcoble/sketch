@@ -1,0 +1,33 @@
+.grid-container {
+	width: 100%;
+}
+
+.grid-container * {
+	box-sizing: border-box;
+}
+
+.outline{
+	outline: 1px solid #F6A1A1; 
+}
+
+.row::before, .row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+[class*='col-'] {
+	float: left;
+	min-height: 1px;
+	padding: 2px;
+}
+
+[class*='col-'].black {
+	background-color: black;
+}
+
+.buttonbar {
+	width: 25%;
+	margin: 5px auto;
+	text-align: center
+}
